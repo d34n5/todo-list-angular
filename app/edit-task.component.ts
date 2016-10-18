@@ -7,8 +7,20 @@ import { Task } from './task.model';
   <div *ngIf="childSelectedTask">
     <h1>Edit Task</h1>
     <div>
-      <label>Enter Task Description</label>
+      <label>Enter Task Description:</label>
       <input [(ngModel)]="childSelectedTask.description">
+    </div>
+    <div>
+      <label>Enter Task Category:</label>
+      <input [(ngModel)]="childSelectedTask.category">
+    </div>
+    <div>
+      <label>Enter Task Priority:</label>
+      <select [(ngModel)]="childSelectedTask.priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
     </div>
     <div>
       <label>Enter Task ID:</label>
