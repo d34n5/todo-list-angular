@@ -19,4 +19,7 @@ export class TaskComponent {
   togglePriority(setPriority: string) {
     this.task.priority = setPriority;
   }
+  toggleCategory(setCategory: string) {
+    this.task.category = setCategory;
+  }
 }

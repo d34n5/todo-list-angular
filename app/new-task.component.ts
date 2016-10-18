@@ -21,7 +21,11 @@ import { Task } from './task.model';
 
     <div>
       <label>Enter Task Category:</label>
-      <input #newCategory>
+      <select #newCategory>
+        <option value="Work">Work</option>
+        <option value="Home">Home</option>
+        <option value="Hobby">Hobby</option>
+      </select>
     </div>
 
     <div>
