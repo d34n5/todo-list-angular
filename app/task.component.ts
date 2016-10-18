@@ -16,10 +16,4 @@ export class TaskComponent {
   toggleDone(setCompleteness: boolean) {
     this.task.done = setCompleteness;
   }
-  togglePriority(setPriority: string) {
-    this.task.priority = setPriority;
-  }
-  toggleCategory(setCategory: string) {
-    this.task.category = setCategory;
-  }
 }
